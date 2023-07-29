@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "summaryTweetGenerator"
+version = "0.1.0"
+description = "Atext summariser that can generate a Tweet using OpenAI"
+authors = ["Riccardo Causo <rixlabs@gmail.com>"]
+license = "MIT"
+readme = "README.md" 
+
+[tool.poetry.dependencies] 
+python = "^3.11" 
+langchain = "^0.0.240" 
+arxiv = "^1.4.8" 
+openai = "^0.27.8"   
+
+[build-system] 
+requires = ["poetry-core"] 
+build-backend = "poetry.core.masonry.api" 

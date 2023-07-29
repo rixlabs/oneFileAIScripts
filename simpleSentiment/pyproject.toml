@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "simpleSentiment"
+version = "0.1.0"
+description = "An OpenAI based tool that provide a scored sentiment analysys of a text"
+authors = ["Riccardo Causo <rixlabs@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^0.27.8"
+langchain = "^0.0.240"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

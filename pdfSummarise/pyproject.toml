@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pdfSummarise"
+version = "0.1.0"
+description = "A multi PDF summariser"
+authors = ["Riccardo Causo <rixlabs@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+openai = "^0.27.8"
+langchain = "^0.0.200"
+PyPDF2 = "^3.0.1"
+
+
+[build-system] 
+requires = ["poetry-core"] 
+build-backend = "poetry.core.masonry.api" 

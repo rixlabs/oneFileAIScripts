@@ -25,10 +25,10 @@ def generate_tweet(source_file):
     tweet_chain = LLMChain(llm=llm, prompt=PROMPT_TWEET,verbose=True)  
 
     # format the text to help the model identify the different sections and to specify a URL manually
-    #to_summarise = f"Title: Meta and Microsoft Introduce the Next Generation of Llama, Abstract:  {source_file.read()} , URL: https://about.fb.com/news/2023/07/llama-2/" 
+    to_summarise = f"Title: Meta and Microsoft Introduce the Next Generation of Llama, Abstract:  {source_file.read()} , URL: https://about.fb.com/news/2023/07/llama-2/" 
 
     # BONUS: you can comment line 28 and uncomment line 31 to use the ARXIS api as a source. Youi still need to pass a dummy file(or change the guard at line 37)
-    to_summarise = arxiv_search.arxiv_search()
+    #to_summarise = arxiv_search.arxiv_search()
 
     return tweet_chain.run(to_summarise)  
 

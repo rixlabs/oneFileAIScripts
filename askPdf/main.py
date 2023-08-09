@@ -21,7 +21,7 @@ def extract_text_from_pdf(pdf_file):
         text_content = ''
 
         # This is a cheap way to limit the text and avoiding problem with the max token length of OpenAPI
-        for page in pdf_reader.pages[8:9]:
+        for page in pdf_reader.pages[5:9]:
             text_content += page.extract_text()
 
         # Close the PDF file
@@ -33,7 +33,7 @@ def extract_text_from_pdf(pdf_file):
         print(f"Error: File '{pdf_file}' not found.")
         return None
     
-def create_vectordb(pdf_files, persist_directory):
+def create_vectordb(pdf_files, persist_directory="db"):
 
     text_content = ''
     for pdf_file in pdf_files:
@@ -90,12 +90,9 @@ if __name__ == "__main__":
     embedding = OpenAIEmbeddings()
     
     # You can comment this line to avoid recreating the vectordb
-    vectordb = create_vectordb(pdf_files)
+    vectordb = create_vectordb(pdf_files, persist_directory)
 
     vectordb = Chroma(persist_directory=persist_directory, embedding_function=embedding)
 
     query(vectordb, "explain me the fefund policies")
     
-    print("\n--- Summary ---\n")
-    
-    print("\n--- End of Summary ---\n")

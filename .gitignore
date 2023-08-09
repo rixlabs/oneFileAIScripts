@@ -59,4 +59,6 @@ env.bak/
 venv.bak/
 
 
+# vector db persistence location
+db/
 

@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "askpdf"
+version = "0.1.0"
+description = "Chat with a PDF document"
+authors = ["Riccardo Causo <rixlabs@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^0.27.8"
+langchain = "^0.0.200"
+PyPDF2 = "^3.0.1"
+chromadb = "^0.3.26"
+tiktoken = "^0.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

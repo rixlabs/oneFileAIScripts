@@ -1,6 +1,6 @@
 # askPdf
 
-hat with your PDF file to explore the content in a conversational way
+Chat with your PDF file to explore the content in a conversational way
 
 
 ## Run

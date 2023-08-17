@@ -1,0 +1,22 @@
+{
+  "name": "dndbiogenerator",
+  "version": "0.0.1",
+  "description": "A character bio genrator for D&D",
+  "tape": "module",
+  "scripts": {
+    "start": "jiti ./index.ts",
+    "spinner": "jiti ./spinner.ts"
+  },
+  "author": "Riccardo Causo <rixlabs@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@clack/core": "^0.3.3",
+    "@clack/prompts": "^0.7.0",
+    "openai": "^3.3.0",
+    "picocolors": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "jiti": "^1.17.0"
+  }
+}
